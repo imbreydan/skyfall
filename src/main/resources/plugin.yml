@@ -1,0 +1,7 @@
+name: SkyFall
+version: ${project.version}
+main: dev.breydan.skyfall.Skyfall
+api-version: 1.16
+authors: [ Breydan ]
+description: Teleports you 100 blocks in the air every 5 minutes, unless theres blocks over your head
+website: https://breydan.dev
