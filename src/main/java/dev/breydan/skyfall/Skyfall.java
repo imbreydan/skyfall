@@ -1,6 +1,7 @@
 package dev.breydan.skyfall;
 
 import dev.breydan.skyfall.command.StartGameCommand;
+import dev.breydan.skyfall.command.StopGameCommand;
 import me.idriz.oss.commands.CommandRegistrar;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
@@ -24,6 +25,7 @@ public final class Skyfall extends JavaPlugin implements Listener {
         Bukkit.getPluginManager().registerEvents(this, this);
         CommandRegistrar registrar = new CommandRegistrar(this);
         registrar.registerCommand(new StartGameCommand());
+        registrar.registerCommand(new StopGameCommand());
     }
 
     @EventHandler
